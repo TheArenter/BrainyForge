@@ -1,25 +1,12 @@
-var token = '160579290:AAENI_8O1JMXwkWR30VJ9Bnjo6wLZlZI0jk';
+var token = '590748562:AAHVXJMYVo67rq7ZfGXAzMyVPfg0dii5cok';
 
 var Bot = require('node-telegram-bot-api'),
     bot = new Bot(token, { polling: true });
 
 console.log('bot server started...');
 
-// hello command
-bot.onText(/^\/say_hello (.+)$/, function (msg, match) {
-  var name = match[1];
-  bot.sendMessage(msg.chat.id, 'Hello ' + name + '!').then(function () {
-    // reply sent!
-  });
-});
+bot.onText(/\/Conigli/, (msg) => {
 
-// sum command
-bot.onText(/^\/sum((\s+\d+)+)$/, function (msg, match) {
-  var result = 0;
-  match[1].trim().split(/\s+/).forEach(function (i) {
-    result += (+i || 0);
-  })
-  bot.sendMessage(msg.chat.id, result).then(function () {
-    // reply sent!
-  });
+bot.sendMessage(msg.chat.id, "La difficoltà EX dei conigli è disponibile: 00:00/05:00/13:00/16:00");
+
 });
