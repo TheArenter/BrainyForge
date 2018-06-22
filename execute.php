@@ -27,16 +27,7 @@ else
 }
 if($text=="/conigli") 
 {
-	
-	if($date > 02.00) 
-	{
 	$response = "La difficoltà EX dei conigli è disponibile nei seguenti orari: 00:00/05:00/13:00/16:00";
-	} 
-	
-	else 
-	{
-		$response = "NO"
-	}
 }
 elseif($date > 02.00 && $text=="domanda 2")
 {
