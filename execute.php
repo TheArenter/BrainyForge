@@ -29,6 +29,14 @@ else
 {
 	$response = "";
 }
+if(strpos($text, "Buongiorno") === 0)
+{
+	$response = "Buongiorno a te $firstname";
+}
+else
+{
+	$response = "";
+}
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
