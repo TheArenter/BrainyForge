@@ -25,7 +25,7 @@ elseif(strpos($text, "/conigli") === 0)
 {
 	$response = "La difficoltà EX dei conigli è disponibile nei seguenti orari: 00:00/05:00/13:00/16:00";
 }
-elseif(strpos($text, "Buongiorno") === 0) 
+elseif(strpos($text, "Buongiorno") !== false) 
 {
 	$response = "Buongiorno a te $firstname";
 }
