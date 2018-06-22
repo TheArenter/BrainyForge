@@ -31,7 +31,7 @@ if($text=="/conigli")
 }
 elseif($date > 02.00 && $text=="domanda 2")
 {
-	$response = "risposta 2";
+	$response = "$date";
 }
 else
 {
