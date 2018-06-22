@@ -30,9 +30,9 @@ if($text=="/conigli")
 {
 	$response = "La difficoltà EX dei conigli è disponibile nei seguenti orari: 00:00/05:00/13:00/16:00";
 }
-elseif($date < $cane && $text=="domanda 2")
+elseif($text=="domanda 2")
 {
-	$response = "$date";
+	$response = "$cane";
 }
 else
 {
