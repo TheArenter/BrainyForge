@@ -12,6 +12,7 @@ $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_nam
 $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
+$needle = 'buongiorno';
 $text = isset($message['text']) ? $message['text'] : "";
 $text = trim($text);
 $text = strtolower($text);
@@ -25,7 +26,7 @@ elseif(strpos($text, "/conigli") === 0)
 {
 	$response = "La difficoltà EX dei conigli è disponibile nei seguenti orari: 00:00/05:00/13:00/16:00";
 }
-elseif(strpos($text, "Buongiorno") !== false) 
+elseif(strpos($text,$needle) !== false) 
 {
 	$response = "Buongiorno a te $firstname";
 }
