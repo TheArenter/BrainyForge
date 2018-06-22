@@ -21,18 +21,17 @@ if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto!";
 }
-else
-{
-	$response = "";
-}
-
-if($text=="/conigli") 
+elseif(strpos($text, "/conigli") === 0) 
 {
 	$response = "La difficoltà EX dei conigli è disponibile nei seguenti orari: 00:00/05:00/13:00/16:00";
 }
+elseif($text=="domanda 2")
+{
+	$response = "risposta 2";
+}
 else
 {
-	$response = "";
+	$response = "Comando non valido!";
 }
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
