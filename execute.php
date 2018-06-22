@@ -19,15 +19,15 @@ header("Content-Type: application/json");
 $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
-	$response = "Ciao $firstname, benvenuto!";
+	$response = "Ciao $firstname";
 }
 elseif(strpos($text, "/conigli") === 0) 
 {
 	$response = "La difficoltà EX dei conigli è disponibile nei seguenti orari: 00:00/05:00/13:00/16:00";
 }
-elseif($text=="domanda 2")
+elseif(strpos($text, "Buongiorno") !== false)
 {
-	$response = "risposta 2";
+	$response = "Buongiorno a te $firstname";
 }
 else
 {
