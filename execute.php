@@ -31,7 +31,7 @@ elseif($text=="domanda 2")
 }
 else
 {
-	$response = "Comando non valido!";
+	$response = "";
 }
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
