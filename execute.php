@@ -9,7 +9,7 @@
 	$FirstName = $FilejSon["message"]["chat"]["first_name"]; // Get the name that user set
 	$UserChatId = $FilejSon["message"]["chat"]["id"]; // get the User ID, this is unique
 	$Message = $FilejSon["message"]["text"]; // Get the message sent from user
-        $msg1 = ['Buongiorno $FirstName!', 'Buongiorno Cavaliere!', 'Bentrovato compagno!'];
+        $msg1 = ['Buongiorno $GLOBALS[FirstName]!', 'Buongiorno Cavaliere!', 'Bentrovato compagno!'];
 
 	switch ($Message)
 	{
