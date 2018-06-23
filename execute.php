@@ -9,7 +9,7 @@
 	$FirstName = $FilejSon["message"]["chat"]["first_name"]; // Get the name that user set
 	$UserChatId = $FilejSon["message"]["chat"]["id"]; // get the User ID, this is unique
 	$Message = $FilejSon["message"]["text"]; // Get the message sent from user
-        $Benvenuti = 'Buongiorno';'buongiorno';
+        $msg1 = array("Neo", "Morpheus", "Trinity", "Cypher", "Tank");
 
 	switch ($Message)
 	{
@@ -24,8 +24,8 @@
 			break;
 			
 		case 'Bongiorno' or 'buongiorno':
-			$msg = "Buongiorno $GLOBALS[FirstName]!";
-			sendMessage($UserChatId, $msg);
+			$msg = "";
+			sendMessage($UserChatId, $msg1);
 			break;
 
 		default:
