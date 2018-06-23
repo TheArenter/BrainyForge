@@ -10,7 +10,7 @@
 	$UserChatId = $FilejSon["message"]["chat"]["id"]; // get the User ID, this is unique
 	$Message = $FilejSon["message"]["text"]; // Get the message sent from user
         $a = ['Buongiorno', 'Buongiorno Cavaliere!', 'Bentrovato compagno!'];
-        $b = ['Buongiorno','buongiorno']
+        $b = ['Buongiorno','buongiorno'];
 
 	switch ($Message)
 	{
