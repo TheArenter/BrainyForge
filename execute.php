@@ -9,6 +9,7 @@
 	$FirstName = $FilejSon["message"]["chat"]["first_name"]; // Get the name that user set
 	$UserChatId = $FilejSon["message"]["chat"]["id"]; // get the User ID, this is unique
 	$Message = $FilejSon["message"]["text"]; // Get the message sent from user
+        $Benvenuti = [["Buongiorno"]["buongiorno"]
 
 	switch ($Message)
 	{
@@ -22,12 +23,12 @@
 			showKeyboard($UserChatId, $msg);
 			break;
 			
-		case 'Buongiorno':
+		case '$Benvenuti':
 			$msg = "Buongiorno $GLOBALS[FirstName]!";
 			showKeyboard($UserChatId, $msg);
 			break;
 
-		case '/Tastiera': // Command to show normal Keyboard
+		/*case '/Tastiera': // Command to show normal Keyboard
 			$msg = "This is a Tutorial, this Keyboard has 3 buttons, click one to test.";
 			showKeyboard($UserChatId, $msg);
 			break;
@@ -50,7 +51,7 @@
 		case "Remove Keyboard": // This is the same text inside a Keyboard
 			$msg = "Abracadabra and keyboard will disappear!";
 			removeKeyboard($UserChatId, $msg);
-			break;
+			break;*/
 
 		default:
 			$msg = "Unknown Command! So sorry ;(";
@@ -65,7 +66,7 @@
 		file_get_contents($url);
 	}
 
-	function showKeyboard($chat_id, $text)
+	/*function showKeyboard($chat_id, $text)
 	{
 		$jSonCodeKeyboard = '&reply_markup={"keyboard":[["Normal%20Keyboard"],["Hide%20Keyboard","Remove%20Keyboard"]],"one_time_keyboard":true}';
 		$url = $GLOBALS[website]."/sendMessage?chat_id=".$chat_id."&text=".urlencode($text).$jSonCodeKeyboard;
@@ -84,6 +85,6 @@
 		$jSonCodeKeyboard = '&reply_markup={"inline_keyboard":[[{"text":"API%20Bot%20Telegram","url":"https://core.telegram.org/bots/api"},{"text":"Google","url":"https://www.google.com"}]]}';
 		$url = $GLOBALS[website]."/sendMessage?chat_id=".$chat_id."&text=".urlencode($text).$jSonCodeKeyboard;
 		file_get_contents($url);
-	}
+	}*/
 
 ?>
