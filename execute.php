@@ -15,17 +15,17 @@
 	{
 		case '/start':
 			$msg = "Welcome $GLOBALS[FirstName]!";
-			showKeyboard($UserChatId, $msg);
+			sendMessage($UserChatId, $msg);
 			break;
 		
 		case '/Conigli':
 			$msg = "La difficoltà EX dei conigli è disponibile nei seguenti orari: 00:00/05:00/13:00/16:00";
-			showKeyboard($UserChatId, $msg);
+			sendMessage($UserChatId, $msg);
 			break;
 			
 		case '$Benvenuti':
 			$msg = "Buongiorno $GLOBALS[FirstName]!";
-			showKeyboard($UserChatId, $msg);
+			sendMessage($UserChatId, $msg);
 			break;
 
 		/*case '/Tastiera': // Command to show normal Keyboard
