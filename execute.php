@@ -9,7 +9,7 @@
 	$FirstName = $FilejSon["message"]["chat"]["first_name"]; // Get the name that user set
 	$UserChatId = $FilejSon["message"]["chat"]["id"]; // get the User ID, this is unique
 	$Message = $FilejSon["message"]["text"]; // Get the message sent from user
-        $a = ['http://php.net/', 'http://google.com/', 'http://bbc.co.uk/'];
+        $msg1 = ['Buongiorno $FirstName!', 'Buongiorno Cavaliere!', 'Bentrovato compagno!'];
 
 	switch ($Message)
 	{
@@ -24,7 +24,7 @@
 			break;
 			
 		case 'Bongiorno' or 'buongiorno':
-			$msg = $a[mt_rand(0, count($a) - 1)];
+			$msg = $msg1[mt_rand(0, count($a) - 1)];
 			sendMessage($UserChatId, $msg);
 			break;
 
