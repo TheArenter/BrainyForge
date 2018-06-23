@@ -24,8 +24,8 @@
 			break;
 			
 		case 'Bongiorno' or 'buongiorno':
-			$msg = "";
-			sendMessage($UserChatId, $msg1);
+			$msg = $msg1;
+			sendMessage($UserChatId, $msg);
 			break;
 
 		default:
