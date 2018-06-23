@@ -23,7 +23,7 @@
 			sendMessage($UserChatId, $msg);
 			break;
 			
-		case '$GLOBALS[Benvenuti]':
+		case 'Buongiorno;buongiorno':
 			$msg = "Buongiorno $GLOBALS[FirstName]!";
 			sendMessage($UserChatId, $msg);
 			break;
