@@ -18,11 +18,13 @@
 			$msg = "Ciao $GLOBALS[FirstName]!";
 			sendMessage($UserChatId, $msg);
 			break;
-
+		case '/Ciao':
+			$msg = "Ciao $GLOBALS[FirstName]!";
+			sendMessage($UserChatId, $msg);
+			break;
 		default:
 			$msg = "Unknown Command! So sorry ;(";
-			sendMessage($ChatId, $msg);
-			
+			sendMessage($ChatId, $msg);		
 	endswitch;
 			
 	} 
