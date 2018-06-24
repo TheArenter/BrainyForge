@@ -25,7 +25,7 @@
 			break;
 			
 		case 'Buongiorno':
-			$msg = $a[mt_rand(0, count($a) - 1)].$GLOBALS[FirstName]!;
+			$msg = $a[mt_rand(0, count($a) - 1)].$FirstName!;
 			sendMessage($UserChatId, $msg);
 			break;
 			
