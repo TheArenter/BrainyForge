@@ -22,15 +22,16 @@
 		default:
 			$msg = "Unknown Command! So sorry ;(";
 			sendMessage($ChatId, $msg);
-			break;
+			
+	endswitch;
+			
 	} 
 	
-
 	function sendMessage($chat_id, $text)
+		
 	{
 		$url = $GLOBALS[website]."/sendMessage?chat_id=".$chat_id."&text=".urlencode($text);
 		file_get_contents($url);
 	}
-
 
 ?>
