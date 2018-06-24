@@ -25,7 +25,7 @@
 		default:
 			$msg = "Unknown Command! So sorry ;(";
 			sendMessage($ChatId, $msg);		
-	                endswitch;
+	                break;
 			
 	} 
 	
