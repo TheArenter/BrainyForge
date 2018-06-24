@@ -1,6 +1,6 @@
 <?php
 	
-	$botToken = "590748562:AAHVXJMYVo67rq7ZfGXAzMyVPfg0dii5cok"; // Api TOKEN to our bot
+	$botToken = "510133925:AAFASuPjXlh3RngZPqFsX_he1EPnnzDsZYQ"; // Api TOKEN to our bot
 	$website = "https://api.telegram.org/bot".$botToken;
 
 	$FilejSon = file_get_contents("php://input"); // Take the url input, in this case will be executed method getUpdates that return Update.
@@ -16,21 +16,6 @@
 	{
 		case '/start':
 			$msg = "Ciao $GLOBALS[FirstName]!";
-			sendMessage($UserChatId, $msg);
-			break;
-		
-		case '/Conigli':
-			$msg = "La difficoltà EX dei conigli è disponibile nei seguenti orari: 00:00/05:00/13:00/16:00";
-			sendMessage($UserChatId, $msg);
-			break;
-			
-		case 'Buongiorno':
-			$msg = $a[mt_rand(0, count($a) - 1)];
-			sendMessage($UserChatId, $msg);
-			break;
-			
-		case '$b':
-			$msg = $a[mt_rand(0, count($a) - 1)];
 			sendMessage($UserChatId, $msg);
 			break;
 
